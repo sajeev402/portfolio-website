@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet"href="style.css">
+    <script src="https://kit.fontawesome.com/9575236900.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+   
+    <nav>
+         <p class="style">Portfolio</p>
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#services">Services</a></li> -->
+            <li><a href="#portfolio">Technical Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        
+        <h1>Hi,I'm <br><span class="cur">SAJEEVA RAO THOTA</span></h1>
+        <div class="para">I'm a Frontend Developer</div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="C:\Users\sajee\OneDrive\Desktop\PORFOLIO\with MT 2.0.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I have a keen desire to learn modern technologies and am commited to delivering high-quality work.I enjoy collobarating with cross functional teams to achieve project goals and am passionate about Frontend Development</p>
+                <div class="tab-titles"> 
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"  onclick="opentab('education')">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Technologies</span><br>HTML,CSS,JS,MERN STACK</li>
+                        <li><span>Languages</span><br>C,JAVA,PYTHON </li>
+                        <li><span>Database</span><br>MONGO DB</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"id="education">
+                    <ul>
+                        <li><span>2021-2025</span><br>BTECH IT</li>
+                        <li><span>2019-2021</span><br>+2 MPC</li>
+                        <li><span>2019</span><br>10th</li>
+                    </ul>
+                </div>
+               
+                <div class="tab-contents"id="experience">
+                    <ul>
+                        <li><span>14-12-2023-17-03-2024</span><br>Full Stack Developer Internship At IncrivelSoft Private Limited</li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Technical Skills</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="https://p92.com/binaries/content/gallery/p92website/technologies/htmlcssjs-overview.png">
+                 
+            </div>
+            <div class="work">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7RI0e9Yq4Mr2Q4Lp2f1VKo-syEtHFwJkmhA&usqp=CAU">
+               
+            </div>
+            
+            <div class="work">
+                <img src="data:image/png;base64,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">
+               
+            </div>
+            <div class="work">
+                <img src="https://yt3.googleusercontent.com/HRJKaJg70sqBrCNh7Tf2RSjXTb_5hCUn7Hht7mxUJMg77EWkihh55JklD-KhwAMhwY31ox5O=s900-c-k-c0x00ffffff-no-rj">
+               
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+</div>
+
+<!-- <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Netflix Clone</h2>
+                <p>This is a clone built using Next.js and NextAuth.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>MeetUps</h2>
+                <p>SPA that allows users to create and list all upcoming meets</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Music Player using Python</h2>
+                <p>This allows to play music according to the user emotions</p>
+                <a href="#">Learn More</a>
+            </div>
+
+        </div>
+    </div>
+</div> -->
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="https://img.freepik.com/premium-photo/isometric-social-media-network-logos-scattered-background_216606-134.jpg?size=626&ext=jpg&ga=GA1.1.2060654057.1704172838&semt=ais">
+                 <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world<br>Share the thoughts</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> 
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://img.freepik.com/free-vector/glowing-shiny-musical-notes-background-design_1017-32856.jpg?size=626&ext=jpg&ga=GA1.1.2060654057.1704172838&semt=ais">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Feel,Relax and Listen the Music</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> 
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://img.freepik.com/free-photo/laptop-shopping-bags-online-shopping-concept_1423-189.jpg?size=626&ext=jpg&ga=GA1.1.2060654057.1704172838&semt=ais">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Buy the product that you want with <br>One click</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+</div>
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Personal Interests</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="https://blog.photoadking.com/wp-content/uploads/2023/06/1686998865222.jpg">
+                 
+            </div>
+            <div class="work">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/365/307/non_2x/cricket-logo-vector.jpg">
+                
+            </div>
+            <div class="work">
+                <img src="https://t4.ftcdn.net/jpg/05/00/61/19/360_F_500611919_5wuf1qGRCubiXXxIa7og1fLLCyHi6qP9.jpg">
+               
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+</div>
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>sajeevthota143@gmail.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i>9398181402</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100082540186796"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/Sajeevthota1?t=xSeSu_AGeR4bEZ5kNkGN5g&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/sajeev_t_h_o_t_a?igsh=YXdqMmZ4Mmp4eGd5"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sajeev-rao-thota-76251b262"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1xP4MDSmmRz78cAdJS_VoxL3INjVTNvvA/view?usp=drivesdk" class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder= "Your Name" required>
+                    <input type="email" name="Email" placeholder= "Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Let's connect and build "></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                 </form>  
+            </div>
+        
+
+        </div>
+    </div>
+
+
+
+
+    
+    <div class="copyright">
+        <p>copyright @ coder made with primary_tech.</p>
+    </div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+</script>
+
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+    
+</body>
+</html>
